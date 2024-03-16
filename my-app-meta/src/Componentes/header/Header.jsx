@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components'; 
 
 const HeaderContainer = styled.header`
-background-color: #fff;
+background-color: #ffffff;
 padding: 20px 0;
 `;
 
