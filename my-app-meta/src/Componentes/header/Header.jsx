@@ -39,7 +39,7 @@ export const Header = () => {
           <a href="#">MENU</a>
           <a href="#">RESERVAS</a>
           <a href="#">PEDIDOS</a>
-          <a href="'#">ENTRAR</a>
+          <a href="#">ENTRAR</a>
         </StyledNav>
         </Col>
         </Row>
