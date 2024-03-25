@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components'; 
 
 const HeaderContainer = styled.header`
-background-color: #ffffff;
+background-color: #fff;
 padding: 20px 0;
 `;
 
@@ -29,10 +29,10 @@ export const Header = () => {
   <HeaderContainer>
     <Container>
       <Row className="align-items-center">
-        <Col xs={4}> 
+        <Col xs={8}> 
         <img className='logo' src={minhaLogo} alt="logo-empresa" />
         </Col>
-        <Col xs={8}>
+        <Col xs={4}>
         <StyledNav>
           <a href="#">INÍCIO</a>
           <a href="#">SOBRE</a>
