@@ -1,9 +1,9 @@
 
 import './App.css';
 import { Header } from './Componentes/header/Header';
-import { CallToAction } from './Componentes/callToAction/CallToAction.jsx';
+// import { CallToAction } from './Componentes/callToAction/CallToAction.jsx';
 import { Specials } from './Componentes/specials/Specials.jsx';
-import HomePage from './Componentes/homePage/HomePage.jsx';
+import HomePage from './Componentes/homePage/HomePage.jsx'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
     <Header/>
     <HomePage />
     <Specials/>
+    
     </>
   );
 }
