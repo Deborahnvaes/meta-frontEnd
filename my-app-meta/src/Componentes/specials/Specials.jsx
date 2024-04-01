@@ -2,30 +2,39 @@
 
 import React from "react";
 import styled from "styled-components";
-import { CardsMenu } from "../cards-menu/CardsMenu";
-import { Button, Row, Col } from "react-bootstrap";
+import { Button, Row, Col, Container } from "react-bootstrap";
+import SpecialOffers from "../ofertas/SpecialOffers";
 
-// const SpecialContainer = styled.specials``;
+const ContainerMenuOnline = styled.section`
+  padding: 20px 0;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
 
 export const Specials = () => {
   return (
-    // <SpecialContainer>
-      <section >
-        <div className="menu-section">
-        <Row className="align-items-center">
+    <ContainerMenuOnline>
+      <Container>
+        <Row>
           <Col xs={8}>
             <h3>PRATOS ESPECIAIS DA SEMANA!</h3>
           </Col>
-        </Row>
-        <Button className="button-menu-online" variant="warning">
-          Menu Online
-        </Button>
-        </div>
 
-        <article className="card-menu">
-          <CardsMenu />
-        </article>
-      </section>
-    // </SpecialContainer>
+          <Col xs={4}>
+            {" "}
+            <ButtonContainer>
+              <Button className="button-menu-online" variant="warning">
+                Menu Online
+              </Button>
+            </ButtonContainer>
+          </Col>
+        </Row>
+      </Container>
+
+      <SpecialOffers />
+    </ContainerMenuOnline>
   );
 };
